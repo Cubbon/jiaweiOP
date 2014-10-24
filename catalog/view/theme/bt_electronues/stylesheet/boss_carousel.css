@@ -1,0 +1,104 @@
+.list_carousel {
+	margin: 0;
+	width: 360px;
+	position:relative
+}
+.list_carousel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.list_carousel li {
+	color: #999;
+	padding: 0;
+	display:inline-block; vertical-align:top;float:none;  margin:0 10px 20px; width:18%
+}
+.list_carousel li  img { max-width:100%}
+.list_carousel li .image a:hover img{opacity:0.5; filter:alpha(opacity=50);}
+.list_carousel.responsive {
+	width: auto;
+	margin-left: 0;
+	clear:both
+}
+.clearfix {
+	float: none;
+	clear: both;
+}
+.list_carousel .prev, .list_carousel .next{ 	text-indent:-9999px;display:inline-block; position:absolute}
+/*.list_carousel .prev
+{
+	background:url(../image/arrow_slide.png) no-repeat; width:11px; height:17px;
+	top:-31px; 
+	right:34px;
+	position:absolute;
+	text-indent:-9999px;
+	background-position:0 0;
+}
+.list_carousel .next
+{
+	background:url(../image/arrow_slide.png) no-repeat; width:11px; height:17px;
+	top:-31px; 
+	right:0;
+	position:absolute;
+	text-indent:-9999px;
+	background-position:100% 0;
+}
+.list_carousel .next:hover{background:url("../image/arrow_slide.png") no-repeat scroll 0 0 transparent;background-position:100% 100%; transition: all 0.3s ease 0s;}
+.list_carousel .prev:hover{background:url("../image/arrow_slide.png") no-repeat scroll 0 0 transparent; background-position:0 100%;transition: all 0.3s ease 0s;} */
+.pager {
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+.pager a {
+	margin: 0 5px;
+	text-decoration: none;
+}
+.pager a.selected {
+	text-decoration: underline;
+}
+.timer {
+	background-color: #999;
+	height: 6px;
+	width: 0px;
+}
+
+/*end category & home filter*/
+
+.product-info .list_carousel li  {float:left}
+
+.list_carousel_footer{padding:8px 35px; border:1px solid #c5c5c5; margin-bottom:9px; position:relative}
+.list_carousel_footer ul li{margin:0}
+.list_carousel_footer ul li div{display:block; background:url(../image/line_carousel.jpg) no-repeat right; padding-right:1px; height:85px; line-height:80px}
+.list_carousel_footer .prev{background:url(../image/arrow_slide.png) no-repeat; width:11px; height:17px; top:45px; right:auto; left:15px; background-position:0 0; }
+.list_carousel_footer .prev:hover{background:url(../image/arrow_slide.png) no-repeat; background-position:0 100%; transition: all 0.3s ease 0s;}
+.list_carousel_footer .next{background:url(../image/arrow_slide.png) no-repeat; width:11px; height:17px; top:45px; right:11px; background-position:100% 0}
+.list_carousel_footer .next:hover{background:url(../image/arrow_slide.png) no-repeat; background-position:100% 100%; transition: all 0.3s ease 0s; }
+.product-info .left  .list_carousel.responsive{width:390px}
+.product-info .left  .list_carousel.responsive  ul li  {margin:0 9px 0 0} 
+.product-info .left  .list_carousel.responsive  ul li a{ display:block;padding:2px; border:1px solid #ccc; background:#fff;text-align: center;}
+.product-info .left  .list_carousel.responsive  ul li a img{max-width: none;}
+.product-info .left  .list_carousel.responsive .prev{background:url("../image/related_button.jpg") no-repeat scroll 0 0; width:17px; height:17px; position:absolute; top:-27px; left:0; text-indent:-9999px}
+.product-info .left  .list_carousel.responsive .next{background:url("../image/related_button.jpg") no-repeat scroll 100% 0; width:17px; height:17px; position:absolute; top:-27px; left:22px; text-indent:-9999px}
+.product-info .left  .list_carousel.responsive .prev:hover{background:url("../image/related_button.jpg") no-repeat scroll 0 100%;}
+.product-info .left  .list_carousel.responsive .next:hover{background:url("../image/related_button.jpg") no-repeat scroll 100% 100%;}
+ 
+#tab-related .list_carousel{padding-top:17px}
+#tab-related .list_carousel .prev{right:44px}
+#tab-related .list_carousel .next{right:10px;}
+#tab-related .list_carousel li{margin-bottom:0}
+.list_carousel #prev_related{top:-44px;}
+.list_carousel #next_related{top:-44px}
+
+#tab-related{position:relative}
+
+#tab-related .list_carousel .prev{background:url("../image/related_button.jpg") no-repeat scroll 0 0; width:17px; height:17px; top:-7px; right:22px;}
+#tab-related .list_carousel .next{background:url("../image/related_button.jpg") no-repeat scroll 100% 0; width:17px; height:17px; top:-7px; right:0px}
+#tab-related .list_carousel .prev:hover{background:url("../image/related_button.jpg") no-repeat scroll 0 100%;}
+#tab-related .list_carousel .next:hover{background:url("../image/related_button.jpg") no-repeat scroll 100% 100%;}
+
+
+
+
+

@@ -1,0 +1,36 @@
+/*module category*/
+#submenu {}
+.submenu  .submenu{border:none}
+#submenu .submenu-inside {  padding:0; position:relative; z-index:200}
+.submenu-inside  dl { position:relative;margin: 0}
+.submenu-inside   dl:hover{ z-index:1600}
+.submenu-inside  dl  { margin-left:0}
+.submenu-inside > dl:first-child {padding-top:11px}
+.submenu-inside  dd{padding-left:10px}
+.submenu-inside  dd > dl > dt > a{color:#969696}
+.submenu-inside  a { color:#646464; text-decoration:none; transition: none;}
+.submenu-inside  a:hover { color:#323232}
+.submenu-inside   dl > dt > a {  line-height:24px; display:inline-block;}
+.submenu-inside   dl.submenu > dt > a { margin-left:25px;line-height: 35px;font-size:16px;font-family: 微软雅黑,黑体;}
+.submenu-inside   dl.submenu >  .curr > em{background-position:-19px 0 !important;}
+.submenu-inside .cate-list-item.submenu > .curr ~ dd.sub-cate-list{display:block;}
+
+.submenu-inside   dl.submenu > dt > em { background: url(../image/em_st.png) no-repeat;width: 16px;height: 16px;float: right;margin-right: 25px;margin-top: 10px;}
+
+.submenu-inside   dl:hover > dt > a { }
+.submenu-inside   dl.submenu:hover > dt > a  { }
+.submenu-inside .cate-list-item > dt{ background-color:#dedede;height: 35px;margin-top:1px;}
+
+.submenu-inside .cate-list-item > dd{ /* position:absolute; display:none;z-index:1;padding:0; */}
+
+.submenu-inside .cate-list-item.submenu dd.sub-cate-list { display:none;}
+.submenu-inside .cate-list-item.submenu:hover dd.sub-cate-list { /* display:block; border:1px solid #C3C1C1; padding:10px 20px 20px 0 */}
+.submenu-inside .cate-list-item.submenu dd.sub-cate-list > div.sub-item{ /* float:left; width:50% */}
+.submenu-inside .cate-list-item.submenu dd.sub-cate-list > div.sub-item > dl { padding-left:20px}
+.submenu-inside .cate-list-item.submenu dd  dl { padding-left:20px}
+.submenu-inside .cate-list-item.submenu dd  dl.cate-list-item{padding-left:0}
+.submenu-inside .cate-list-item.submenu dd.sub-cate-list > div.sub-item > dl > dt > a.active{color:red; display:block}
+.submenu-inside .cate-list-item.submenu dd.sub-cate-list > div.sub-item > dl:hover > dt > a {color:#F44D00}
+
+
+

@@ -1,0 +1,7 @@
+#infostyle{font-family:'微软雅黑','黑体';}
+#infostyle .tit{background:#ecfec2;line-height:35px;border-top:solid 2px green;padding-left:25px;color:#6a930e;font-size:18px;margin-bottom:45px;}
+#infostyle .tab{border:1px solid #dedede;box-shadow:2px 2px 5px #333;margin-bottom:45px;padding:45px; display:inline-block}
+#infostyle dl{clear:both;margin:15px 20px;}
+#infostyle dl dt{width:200px;float:left;text-align:right;padding-right:25px;}
+#infostyle dl dd{display: flex;}
+#infostyle h1{border-bottom:1px dotted #b3b3b3;}

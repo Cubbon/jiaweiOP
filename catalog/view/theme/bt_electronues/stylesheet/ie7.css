@@ -1,0 +1,73 @@
+.success, .warning, .attention, .information {
+	position: relative;
+}
+.success .close, .warning .close, .attention .close, .information .close {
+	position: absolute;
+	right: 10px;
+}
+table.radio td{vertical-align:middle}
+body .list_carousel li { display:inline}
+select{height:22px}
+#content{display:block; width:auto}
+#content .boss_frame{margin-left:0; margin-right:0}
+#column-left > div{margin-left:0; margin-right:0}
+.pagination{overflow:hidden; display:block}
+input[type="checkbox"]{margin-left:-4px}
+/*blog*/
+.article-grid > div,
+.boss_article-detail #productRelated  .box-product > div ,
+.boss_article-detail  .date-post small,  .boss_article-detail  .date-post span ,
+.boss_article-detail .tags  span , .boss_article-detail .tags ul, .boss_article-detail .tags li ,
+.comment-item-header span, .comment-item-header small.time-stamp { display:inline!important; vertical-align:top}
+.article-filter .rss-feed{margin-top:-4px}
+
+.product-grid > div,
+.product-info .cart .action > div { display:inline}
+.product-filter .limit select, .product-filter .sort select, .article-filter .limit select, .article-filter .sort select{height:22px}
+.product-filter .sort b, .product-filter .limit b, .article-filter .sort span, .article-filter .limit span{vertical-align:4px}
+.product-filter .display, .article-filter .display{margin-top:5px}
+.product-info .options .option .title_text + select{margin-top:6px}
+/*block*/
+.block-header-top{min-width:300px}
+.choose-select select{margin-top:4px}
+body.home_page .position_slideshow .slideshow_grid{margin-right:0}
+.home_filter_content .content_tabs_items .category_childs a{margin-bottom:0}
+
+.manuff_block select{height:22px}
+
+#footer .column{width:24%}
+.footer-center .block-footer-left .block-footer-2{padding-top:40px}
+.product-filter .sort{width:40%; text-align:left}
+.product-info .cart .quantily_info input[type="text"]{height:42px}
+.product-info .cart .action{width:20%}
+.product-info .options .box-check{padding-right:50px}
+#boss_menu, #menu{top:57px}
+.boss_menu_vertical > div > p > span > b{margin-top:-57px}
+#boss-search{width:74%}
+.choose-select input[type="text"]{width:87%;}
+div.slideshow_grid > ul > li{width:304px;}
+div.slideshow_grid > ul > li:first-child{margin-right:18px}
+div.slideshow_grid > ul > li.push-33{left:308px}
+div.slideshow_grid > ul > li.pull-33{left:-311px}
+.position_slideshow > div.slideshow_grid > ul{margin-left:-20px}
+
+#tab-review input[type="text"], #tab-review textarea{display:block; clear:both; margin-left:-40px}
+.cart-info tbody .quantity{padding-top:15px}
+.cart-info tbody .quantity input[type="image"]{top:-7px}
+.cart-info tbody .remove{padding-top:27px}
+table.radio tr td:first-child input{margin-top:-2px}
+.home_filter_content .content_tabs_items .category_childs{padding-bottom:17px}
+.home_filter_content .content_tabs_items .category_childs span{padding-bottom:0}
+.boss_homecategory_column .box-content ul a.viewmore{padding-left:0}
+.boss_homecategory_column .box-content ul a.viewmore > b{vertical-align:3px}
+.boss_homecategory_column .box-content{padding-bottom:10px}
+p.choose_search select{height:22px}
+.login-content .right{float:left;}
+.login-content .left{padding-right:40px}
+.login-content .right input[type="text"], .login-content .right input[type="password"]{width:270px}
+body.home_page .boss_header{margin-bottom:40px}
+.order-list .order-content, .order-list .order-content div, .return-list .return-content, .return-list .return-content div{display:block; overflow:hidden}
+a.cloud-zoom { display:inline!important}
+.bosszoomtoolbox .image{float:left}
+.boss_article-detail #productRelated{width:100%}
+a.sft_quickshop_icon{display:none!important}

@@ -1,0 +1,4 @@
+a.sft_quickshop_icon { display:none!important}
+/*slide*/
+.list_carousel li  img:hover{ filter:alpha(opacity=50)}
+.manuff_block select {padding:6px 5px 7px 2px;}

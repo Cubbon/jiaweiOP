@@ -1,0 +1,208 @@
+<?php echo $header; ?>
+ <div class="breadcrumb">
+    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+    <a <?php echo (($breadcrumb==end($breadcrumbs))? 'class="last"':''); ?> href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+    <?php } ?>
+  </div><?php echo $column_left; ?><?php echo $column_right; ?>
+<div id="content" class="grid-80 tablet-grid-80 mobile-grid-100 grid-parent"><div class="boss_frame">
+  <h1><?php echo $heading_title; ?></h1><?php echo $content_top; ?>
+
+  <?php if ($thumb || $description) { ?>
+  <div class="category-info">
+    <?php if ($thumb) { ?>
+    <div class="image"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" /></div>
+    <?php } ?>
+    <?php if ($description) { ?>
+    <?php echo $description; ?>
+    <?php } ?>
+  </div>
+  <?php } ?>
+  <?php if ($categories) { ?>
+  <div class="category-list">
+  <h2><?php echo $text_refine; ?></h2>
+    <?php if (count($categories) <= 5) { ?>
+    <ul>
+      <?php foreach ($categories as $category) { ?>
+      <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+      <?php } ?>
+    </ul>
+    <?php } else { ?>
+    <?php for ($i = 0; $i < count($categories);) { ?>
+    <ul>
+      <?php $j = $i + ceil(count($categories) / 4); ?>
+      <?php for (; $i < $j; $i++) { ?>
+      <?php if (isset($categories[$i])) { ?>
+      <li><a href="<?php echo $categories[$i]['href']; ?>"><?php echo $categories[$i]['name']; ?></a></li>
+      <?php } ?>
+      <?php } ?>
+    </ul>
+    <?php } ?>
+    <?php } ?>
+  </div>
+  <?php } ?>
+  <?php if ($products) { ?>
+  <div class="product-filter row"> 
+    <div class="form-choice-category">
+	<div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>
+    <div class="limit"><b><?php echo $text_limit; ?></b>
+      <select onchange="location = this.value;">
+        <?php foreach ($limits as $limits) { ?>
+        <?php if ($limits['value'] == $limit) { ?>
+        <option value="<?php echo $limits['href']; ?>" selected="selected"><?php echo $limits['text']; ?></option>
+        <?php } else { ?>
+        <option value="<?php echo $limits['href']; ?>"><?php echo $limits['text']; ?></option>
+        <?php } ?>
+        <?php } ?>
+      </select>
+    </div>
+    <div class="sort"><b><?php echo $text_sort; ?></b>
+      <select onchange="location = this.value;">
+        <?php foreach ($sorts as $sorts) { ?>
+        <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
+        <option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
+        <?php } else { ?>
+        <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
+        <?php } ?>
+        <?php } ?>
+      </select>
+    </div>
+    </div>
+  <div class="product-compare"><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></div>
+  </div>
+  
+  <div class="product-list">
+    <?php foreach ($products as $key => $product) { ?><div class="grid-25 tablet-grid-25 mobile-grid-100">
+      <?php if ($product['thumb']) { ?>
+      <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
+      <?php } ?>
+      <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+      <?php if ($product['rating']) { ?>
+      <div class="rating"><img src="catalog/view/theme/bt_electronues/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
+      <?php } ?>
+      <div class="description"><?php echo $product['description']; ?></div>
+      <?php if ($product['price']) { ?>
+      <div class="price">
+        <?php if (!$product['special']) { ?>
+        <?php echo $product['price']; ?>
+        <?php } else { ?>
+        <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new"><?php echo $product['special']; ?></span>
+        <?php } ?>
+        <?php if ($product['tax']) { ?>
+        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
+        <?php } ?>
+      </div>
+      <?php } ?>
+      <div class="cart">
+        <span class="button"><input type="button" value="<?php echo $button_cart; ?>" onclick="boss_addToCart('<?php echo $product['product_id']; ?>');" class="button" /></span>
+      </div>
+	  <div class="action">
+      <div class="compare"><a title="<?php echo $button_compare; ?>" class="action-button" onclick="boss_addToCompare('<?php echo $product['product_id']; ?>');"><span><?php echo $button_compare; ?></span></a></div>
+      <div class="wishlist"><a title="<?php echo $button_wishlist; ?>" class="action-button" onclick="boss_addToWishList('<?php echo $product['product_id']; ?>');"><span><?php echo $button_wishlist; ?></span></a></div>
+	  </div>
+    </div><?php } ?></div>
+  <div class="pagination"><?php echo $pagination; ?></div>
+  <?php } ?>
+  <?php if (!$categories && !$products) { ?>
+  <div class="content"><?php echo $text_empty; ?></div>
+  <div class="buttons">
+    <div class="left"><a href="<?php echo $continue; ?>" class="button"><span><?php echo $button_continue; ?></span></a></div>
+  </div>
+  <?php } ?>
+  <?php echo $content_bottom; ?></div></div>
+<script type="text/javascript"><!--
+function display(view) {
+	if (view == 'list') {
+		$('.product-grid').attr('class', 'product-list');
+		
+		$('.product-list > div').each(function(index, element) {
+					
+			html = '<div class="left">';
+			
+			var image = $(element).find('.image').html();
+			
+			if (image != null) { 
+				html += '<div class="image">' + image + '</div>';
+			}
+			html += '</div>';
+			
+			html += '<div class="right">';		
+			html += '  <div class="name">' + $(element).find('.name').html() + '</div>';
+			
+			var rating = $(element).find('.rating').html();
+			
+			if (rating != null) {
+				html += '<div class="rating">' + rating + '</div>';
+			}
+				
+			html += '  <div class="description">' + $(element).find('.description').html() + '</div>';
+			
+			var price = $(element).find('.price').html();
+			
+			if (price != null) {
+				html += '<div class="price">' + price  + '</div>';
+			}
+			html += '  <div class="cart">' + $(element).find('.cart').html() + '</div>';
+			html += '  <div class="action">' + $(element).find('.action').html() + '</div>';
+			html += '</div>';	
+						
+			$(element).html(html);
+		});		
+		
+		$('.display').html('<b><?php echo $text_display; ?></b> <span class="active-list" title="<?php echo $text_list; ?>"><?php echo $text_list; ?></span><a title="<?php echo $text_grid; ?>" class="no-active-gird" onclick="display(\'grid\');"><?php echo $text_grid; ?></a>');
+		
+		$.totalStorage('display', 'list'); 
+	} else {
+		$('.product-list').attr('class', 'product-grid');
+		
+		$('.product-grid > div').each(function(index, element) {
+			html = '';
+			html += '<div>';	
+			var image = $(element).find('.image').html();
+			
+			if (image != null) {
+				html += '<div class="image">' + image + '</div>';
+			}
+			
+			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
+			var rating = $(element).find('.rating').html();
+			
+			if (rating != null) {
+				html += '<div class="rating">' + rating + '</div>';
+			}
+			html += '<div class="description">' + $(element).find('.description').html() + '</div>';
+			
+			var price = $(element).find('.price').html();
+			
+			if (price != null) {
+				html += '<div class="price">' + price  + '</div>';
+			}
+						
+			html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
+			html += '<div class="action">' + $(element).find('.action').html() + '</div>';
+			html += '</div>';	
+			$(element).html(html);
+		});	
+					
+		$('.display').html('<b><?php echo $text_display; ?></b> <a title="<?php echo $text_list; ?>" class="no-active-list" onclick="display(\'list\');"><?php echo $text_list; ?></a><span class="active-gird" title="<?php echo $text_grid; ?>" ><?php echo $text_grid; ?></span>');
+		
+		$.totalStorage('display', 'grid');
+	}
+}
+
+	view = $.totalStorage('display');
+
+	if (view) { 
+		display(view);
+	} else {
+		<?php if ($this->config->get('b_General_P_Display') == 'grid') { ?>
+		display('grid');
+		<?php }else { ?>
+		display('list');
+		<?php } ?>
+	}
+	<?php $detect = new Mobile_Detect;
+	if($detect->isMobile() && !$detect->isTablet()){ ?>
+		display('grid');
+	<?php } ?>
+//--></script>  
+<?php echo $footer; ?>

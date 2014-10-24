@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<items_setting>
+	<general>
+		<item>
+			<frontend>false</frontend>
+			<text>General Fonts</text>
+			<style>g_fstyle</style>
+			<size>g_fsize</size>
+			<weight>g_fweight</weight>
+			<transform>g_ftrans</transform>
+			<class_name>body, td, a, input, select, textarea, .help, .links .login-frame, .links .content-logged, .mini-cart-info td div small, .box.tagcloud a, .category-info p, .category-list ul li a, .pagination .results, #top_footer, .product-info .price, .product-info .price .price-tax, .product-info .price, .product-info .options, .product-info .cart strong, .product-info .cart .minimum, .tags b, .tags a, .attribute thead td, .attribute thead tr td:first-child, .review-list .author, .review-list .text, ul.box-category > li > a, .box .box-content ul li a, .cart_frame p, .cart_frame table.radio td, .cart-module table td select, .cart-module table td, .cart-module .content input, .box.manufacturer_box select, .product-info .description, .product-info .description a, #checkout .checkout-content b, #checkout .checkout-content .left span, .checkout-content #login span, .checkout-content a.forgotten, .checkout-content .left b, .checkout-content .right b, #shipping-method .checkout-content b, #payment-method .checkout-content b, .checkout-product tfoot td.price, #header #search input, .compare-info td, .myaccount ul li a, .order-list b, table.list td b, .return-product b, .return-detail b, .article-filter .display b, .article-filter .sort span, .article-filter .limit span, .boss_article-items .article-footer .post-by, .boss_article-items .article-footer .post-by span, .boss_article-items .article-footer .comment-count a, .boss_article-items .article-footer .comment-count span, .box.boss_block-recent-post li.item small.time-stamp, .box.boss_block-recent-post li.item span.post-by, .box.boss_block-recent-comments li.item small.time-stamp, .box.boss_block-recent-comments li.item span.comment-by, .boss_article-item .article-title p, .boss_article-item .article-content p, .boss_article-action .tags span, .boss_article-action .tags li a, .article-related li a, .comment-item-header small, .comment-body, .comment-item .author .comment-by, .comments .required, .comments .required-1, form.register table.form.register_last td.input, .product-compare a, .product-filter .display b, .product-filter .sort b, .product-filter .limit b, .pagination .links a, .pagination .links b, .boss-alphabet ul li a, .product-info .options b, .product-info .options h2, .product-info .cart .quantily_info b, #tab-review b, form.register table.form td, form.register table.form.register_last td.input, form.register .buttons, .links .login-frame b, .links .login-frame span.note, .links .login-frame a.forgotpass, .login-content b, .product-info .image, a.colorbox, .sitemap-info, form.register table.form td, .links .login-frame span.title-login, .links .login-frame span.title-login a, .boss_homecategory_column .box-content ul > a, table.radio td label, .compare-info a.remove, .cart-total td.left, .boss_homecategory_column .box-content ul a.viewmore</class_name>
+		</item>
+	</general>
+	<header>
+		<item>
+			<frontend>true</frontend>
+			<text>Header Fonts 1</text>
+			<style>h_fstyle_1</style>
+			<size>h_fsize_1</size>
+			<weight>h_fweight_1</weight>
+			<transform>h_ftrans_1</transform>
+			<class_name>#header_top #welcome, #header_top #welcome a, #header_top .links a, #language a, #currency a, .block-header-top p</class_name>
+		</item>
+		<item>
+			<frontend>true</frontend>
+			<text>Header Fonts 2</text>
+			<style>h_fstyle_2</style>
+			<size>h_fsize_2</size>
+			<weight>h_fweight_2</weight>
+			<transform>h_ftrans_2</transform>
+			<class_name>.choose-select span.title, #header_bottom #cart .heading a span</class_name>
+		</item>
+	</header>
+	<footer>
+		<item>
+			<frontend>true</frontend>
+			<text>Footer Title</text>
+			<style>f_fstyle_1</style>
+			<size>f_fsize_1</size>
+			<weight>f_fweight_1</weight>
+			<transform>f_ftrans_1</transform>
+			<class_name>#footer h3</class_name>
+		</item>
+		<item>
+			<frontend>true</frontend>
+			<text>Footer Normal</text>
+			<style>f_fstyle_2</style>
+			<size>f_fsize_2</size>
+			<weight>f_fweight_2</weight>
+			<transform>f_ftrans_2</transform>
+			<class_name>#footer .column a, #footer-block-friends ul li a, .footer-center .block-footer-left .block-footer-2 li a, #powered, #powered a, #footer_static_store_directories ul li h4, #footer_static_store_directories ul li a</class_name>
+		</item>
+	</footer>
+	<menu>
+		<item>
+			<frontend>true</frontend>
+			<text>Menu Title</text>
+			<style>m_fstyle_1</style>
+			<size>m_fsize_1</size>
+			<weight>m_fweight_1</weight>
+			<transform>m_ftrans_1</transform>
+			<class_name>.boss_menu_vertical > div > p > span</class_name>
+		</item>
+		<item>
+			<frontend>false</frontend>
+			<text>Menu Fonts 2</text>
+			<style>m_fstyle_2</style>
+			<size>m_fsize_2</size>
+			<weight>m_fweight_2</weight>
+			<transform>m_ftrans_2</transform>
+			<class_name>.boss_menu_vertical div > ul > li > div.dropdown a.parent, .boss_menu_vertical div > ul > li > div.dropdown .column.category li a, #megamenu-responsive .root > ul > li > a, #boss_menu ul > li.menu_item > a, #menu > ul > li > a, #menu > ul > li ul > li > a</class_name>
+		</item>
+		<item>
+			<frontend>false</frontend>
+			<text>Menu Fonts 3</text>
+			<style>m_fstyle_3</style>
+			<size>m_fsize_3</size>
+			<weight>m_fweight_3</weight>
+			<transform>m_ftrans_3</transform>
+			<class_name>.boss_menu_vertical div > ul > li > div.dropdown .staticblock h3, .boss_menu_vertical div > ul > li > div.dropdown .staticblock p, .boss_menu_vertical div > ul > li > div.dropdown .staticblock h4</class_name>
+		</item>
+	</menu>
+	<product>
+		<item>
+			<frontend>true</frontend>
+			<text>Product Name</text>
+			<style>p_name_fstyle</style>
+			<size>p_name_fsize</size>
+			<weight>p_name_fweight</weight>
+			<transform>p_name_ftrans</transform>
+			<class_name>.name a, .cart-info tbody .name a, .cart-info tbody .name span, .wishlist-info tbody .name a, .wishlist-info tbody .name span, .compare-info .name a, .mini-cart-info td div.name a, #boss_menu > ul > li > div.dropdown .column.product li a, .home_filter_content .box-content .name a, .boss-tab-related .name a, .ui-notify .boss_text h3 a, .box-product .name a,  .checkout-product tbody .name a, .box.account .box-content ul li a, .boss_blog-cat .box-category > ul > li > a, .boss_article-item #productRelated .relProduct .name a, .boss_lastestreview li .product_review .detail .name a, #tab-related .boss-tab-related .name a, .boss_article-items .article-name h2 a, .box.boss_block-recent-post li.item a.article-title, .box.boss_block-recent-comments li.item a.comment-title </class_name>
+		</item>
+		<item>
+			<frontend>false</frontend>
+			<text>Product Description</text>
+			<style>p_des_fstyle</style>
+			<size>p_des_fsize</size>
+			<weight>p_des_fweight</weight>
+			<transform>p_des_ftrans</transform>
+			<class_name>.product-grid .description, .product-list .description, #boss_menu > ul > li > div.dropdown .column.product li div.description, .boss_article-items .time-stamp small, .boss_article-items .article-title p, .recent-comment-content, .recent-comment-content,  .boss_block-tag-cloud .box-content a, .mini-cart-info td div.model, .box-product .model, .boss_lastestreview li .product_review .detail .model, .cart-info tbody .model, .checkout-product tbody .model, .wishlist-info tbody .model, .wishlist-info tbody .stock, .boss_article-items .article-desc p, .box.boss_block-recent-post li.item .recent-comment-content, .box.boss_block-recent-comments li.item .recent-comment-content </class_name>
+		</item>
+		<item>
+			<frontend>false</frontend>
+			<text>Product Price</text>
+			<style>p_price_fstyle</style>
+			<size>p_price_fsize</size>
+			<weight>p_price_fweight</weight>
+			<transform>p_price_ftrans</transform>
+			<class_name>.product-grid .price, .product-list .price, .product-grid .price-new, .product-list .price-new, .box-product .price, .cart-info tbody .price, .cart-info tbody .total, .wishlist-info tbody td.price, .wishlist-info tbody .total, .compare-info td.price, .compare-info .price-new, .mini-cart-info td div.price, .product-info .price-new, .boss-tab-related .price, #boss_menu > ul > li > div.dropdown .column.product li span.price-new, #boss_menu > ul > li > div.dropdown .column.product li span.price, .home_filter_content .box-content .price, .product-info .price .price-text, .product-list .price-old, .product-grid .price-old, .product-info .price-old, .box-product .price-old, .wishlist-info tbody td.price s, .compare-info .price-old, .boss-tab-related .price .price-old, #boss_menu > ul > li > div.dropdown .column.product li span.price-old, .home_filter_content .box-content .price .price-old, .checkout-product tbody .quantity, .checkout-product tbody .price, .checkout-product tbody .total, .checkout-product tfoot td.price b, .checkout-product tfoot td.total, .boss_article-item #productRelated .relProduct .price, .mini-cart-info td div.total, .mini-cart-info td div.quantity, .boss_lastestreview li .product_review .detail .price, .product-list .price-tax, #tab-related .boss-tab-related .price, .product-info .price .price-new, .product-info .price b, .wishlist-info tbody .unitprice, .mini-cart-total td.left, .mini-cart-total td.right, .cart-total td.right, .home_filter_content .box-content ul li .price .price-new, .home_filter_content .box-content ul li .price .price-old</class_name>
+		</item>
+		<item>
+			<frontend>true</frontend>
+			<text>Button</text>
+			<style>p_addcart_fstyle</style>
+			<size>p_addcart_fsize</size>
+			<weight>p_addcart_fweight</weight>
+			<transform>p_addcart_ftrans</transform>
+			<class_name>input.button, a.button, .product-info input.button_cart, a.sft_quickshop_icon, a.button_black</class_name>
+		</item>
+	</product>
+	<title>
+		<item>
+			<frontend>true</frontend>
+			<text>Page Title</text>
+			<style>t_page_fstyle</style>
+			<size>t_page_fsize</size>
+			<weight>t_page_fweight</weight>
+			<transform>t_page_ftrans</transform>
+			<class_name>h1, h2, .welcome,  h2.choice-shopping, .myaccount h2, .article-related .form-title, #productRelated h3.form-title, .form-comment-container h3, #comments-header h3.form-title, .htabs a.selected, .htabs a, h2.ta-related, .checkout-content h2, .mini-cart-info h4, .category-info h1, .ui-notify .boss_text h3, h2.boss_icon_success, table.list thead td a, .list thead td, .product-info .description h1, .category-info h2, #tab-review h2, h1.text_register, form.register h2, .links .login-frame span.title-login, form.register h2, .product-info .right h1, .choice_shopping_cart h2, .my_account h2</class_name>
+		</item>
+		<item>
+			<frontend>true</frontend>
+			<text>Block Title</text>
+			<style>t_block_fstyle</style>
+			<size>t_block_fsize</size>
+			<weight>t_block_fweight</weight>
+			<transform>t_block_ftrans</transform>
+			<class_name>.box .box-heading, .tabs_content_container h3 a, h2.ta-related, .article-related .form-title, #productRelated h3.form-title, .form-comment-container h3, #comments-header h3.form-title, .htabs a.selected, .htabs a, .cart-info thead td, .checkout-heading, .checkout-product thead td, .wishlist-info thead td, .compare-info thead tr td:first-child, .compare-info tbody tr td:first-child, .boss_lastestreview .box-heading, .category-list h2, .boss_homecategory ul li .name a, .block-header-top span, .boss_homefilter_tabs .box-content h3, .manufacturer-heading, .cart-module .content p.title, #tab-related h2.ta-related, .home_filter_content h3.heading a, div.banner_header > ul > li p</class_name>
+		</item>
+		<item>
+			<frontend>false</frontend>
+			<text>Breadcrumb</text>
+			<style>t_bread_fstyle</style>
+			<size>t_bread_fsize</size>
+			<weight>t_bread_fweight</weight>
+			<transform>t_bread_ftrans</transform>
+			<class_name>.breadcrumb a</class_name>
+		</item>
+	</title>
+</items_setting>

@@ -1,0 +1,282 @@
+/* box category */
+.box-category {}
+.box-category, .box-category ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.box-category ul > li:first-child {
+}
+.box-category ul > li {
+}
+.box-category ul > li + li {
+}
+.box-category ul > li > a {
+	color: #646464;
+    line-height: 24px;
+}
+.box-category ul > li:hover > a, .box-category ul > li > a.active{color: #323232;}
+.box-category ul > li ul {
+	display: none;
+}
+.box-category ul > li a.active + ul {
+	display: block; padding-left:10px
+}
+.box-category ul > li ul > li {
+}
+.box-category ul > li ul > li > a {
+	text-decoration: none;
+	display: inline-block;
+}
+.box-category ul > li ul > li > a.active {
+}
+.box-content ol { padding-left:0; margin-left:0}
+.block-content ol > li  {padding:13px 0}
+.block-content ol > li + li{border-top:1px solid #e8e8e8}
+.block-content ol > li:first-child { background:none; padding-top:5px}
+.block-content ol > li > a:hover { color:#202020}
+.block-content .recent-comment-content {color:#969696; font-size:12px }
+.block-content .post-by, .block-content .comment-by { color:#969696; font-size:11px; text-transform:uppercase; display:inline-block; padding-top:8px} 
+.block-content .post-by span, .block-content .comment-by span{color:#1e1e1e}
+.block-content .article-title{color:#0c32b7; font:400 14px Arial; margin-bottom:15px; display:block} 
+.block-content  .comment-title { color:#969696;font-size:14px; line-height:18px; display:block; margin-bottom:12px}
+.block-content .article-title:hover , .block-content  .comment-title:hover{ color:#000}
+.block-content  .time-stamp { margin-bottom:12px; }
+small { font-size:12px}
+
+.box.boss_block-tag-cloud{ margin-bottom:35px}
+.boss_block-tag-cloud  .box-content {padding-top:18px}
+.boss_block-tag-cloud a { display: inline-block; padding: 0 5px 2px 0}
+.boss_block-tag-cloud a:hover {}
+
+.category-title h1 { margin-bottom:4px}
+
+.article-filter {
+	display:inline-block;
+	width:100%;
+	margin-bottom:70px !important;
+}
+.article-filter .display {
+	float: left;
+    margin-top: 12px;
+	margin-bottom: 15px;
+}
+.article-filter .display b {
+    color: #0F0F0F;
+    float: left;
+    font: 700 10px Arial;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.article-filter .display a, .article-filter .display span{ 
+	display: block;
+    float: left;
+    height: 14px;
+    margin-right: 10px;
+    text-indent: -9999px;
+    width: 14px;
+}
+.article-filter .display span.active-gird {
+	background: url("../image/grid_list_item.jpg") no-repeat scroll 0 0 transparent;
+}
+.article-filter .display a.no-active-gird {
+	background: url("../image/grid_list_item.jpg") no-repeat scroll 0 100% transparent;
+}
+.article-filter .display a.no-active-list { 
+	background: url("../image/grid_list_item.jpg") no-repeat scroll 100% 100% transparent;
+}
+.article-filter .display span.active-list { 
+	background: url("../image/grid_list_item.jpg") no-repeat scroll 100% 0 transparent;
+}
+.article-filter .display a.no-active-gird:hover{background: url("../image/grid_list_item.jpg") no-repeat scroll 0 0 transparent;}
+.article-filter .display a.no-active-list:hover {background: url("../image/grid_list_item.jpg") no-repeat scroll 100% 0 transparent;}
+
+.article-filter .limit {
+    color: #333333;
+    float: right;
+    margin-left: 13px;
+	margin-bottom: 5px;
+}
+.article-filter .limit select, .article-filter .sort select {
+    border-radius: 4px 4px 4px 4px;
+    color: #646464;
+    font-size: 12px;
+    height: 35px;
+    line-height: 24px;
+    padding: 8px 2px 6px;
+    width: 290px;
+}
+.article-filter .limit select option {
+    padding-left: 5px;
+}
+.article-filter .sort {
+    color: #333333;
+    float: right;
+	margin-bottom: 5px;
+}
+.article-filter .sort span, .article-filter .limit span {
+    color: #0F0F0F;
+    font-size: 10px;
+    font-weight: 700;
+    margin-right: 7px;
+    position: relative;
+    text-transform: uppercase;
+}
+.article-filter .sort select option {
+    padding-left: 5px;
+}
+.product-compare {
+    float: left;
+    margin-bottom: 25px;
+	margin-top:6px;
+}
+.product-compare a {
+    font-family: 'allerregular';
+    font-weight: 400;
+    text-decoration: none;
+	color:#17a8fb;
+	font-size:14px;
+}
+.product-compare a:hover{color:#787878}
+
+.article-filter .rss-feed { float:left; margin:3px 10px 15px 10px}
+
+.boss_article-items { clear:both}
+.boss_article-items  img { max-width:100%}
+.boss_article-items .article-name h2 { margin-bottom:18px; text-transform:none; font-weight:normal; font-size: 12px; font-family: Arial; clear:none}
+.boss_article-items .article-name h2 a { color: #0c32b7;  font-size: 16px;}
+.boss_article-items .article-name h2 a:hover { color:#000}
+.boss_article-items .article-image {margin-bottom:25px}
+.time-stamp { color:#63b411; display:block; font-size:11px} 
+.time-stamp small { font-size:12px; font-style:italic}
+.article-footer {border:1px solid #c3c1c1; padding:10px; border-radius:3px; text-transform:uppercase; color:#969696; font-size:11px; clear:both; line-height: 15px;}
+.article-footer a{ color:#969696; font-size: 11px;}
+.article-footer a:hover {color:#f30202 }
+.article-footer .post-by span {color:#1e1e1e} 
+.boss_article-detail .article-footer{margin-bottom:50px}
+.comment-count span { color:#ff0101}
+
+.article-list { margin:0 -10px}
+.article-list > div + div { }
+.article-list > div {margin-bottom: 42px;float:left; clear:both; width:98%!important }
+.article-list div.std  { display:block; overflow:hidden}
+.article-title { margin-bottom:17px}
+.boss_article-item{margin-bottom:30px}
+.blog_search {}
+.blog_search   .boss_article-items { margin-top:15px}
+.blog_search   .boss_article-items > div.boss_article-item {margin-bottom: 26px;float:left; clear:both; width:98%!important }
+.blog_search   .boss_article-items div.std  { display:block; overflow:hidden}
+
+.article-grid { margin-left:-18px; margin-right: -10px; overflow: hidden;}
+.article-grid > div { display:inline-block; width:46%;  padding-bottom:45px; padding-left:2%; padding-right:2%; vertical-align:top;float:none}
+.article-grid > div > div { }
+.article-grid .article-name { clear:both; }
+.article-grid .article-image img { max-width:100%}
+.article-grid  .article-image { margin:0 0 25px; float:left; text-align:center; width:100%}
+.article-grid  .article-image  a { text-align:center}
+.article-grid .article-title{ font-size:12px; margin-bottom:20px}
+.boss_article-items .article-title p { margin-bottom:0; line-height:16px; font-size:12px; color:#969696;}
+.article-grid  .article-name, .article-grid .article-footer{}
+.article-grid .time-stamp{clear:both; display:none}
+.article-grid  .article-footer {	}
+
+p.category-image { margin-bottom:14px}
+p.category-image  img { max-width:100%}
+.category-description { padding-bottom:25px}
+.category-description p b { color:#242424}
+.category-description p { margin-bottom:12px; line-height:1.5em}
+
+h1.article-title-boss { font-size:16px; text-transform:none; margin-bottom:12px; display:block; color:#0c32b7}
+.boss_article-detail {}
+.boss_article-detail  .date-post {}
+.boss_article-detail  .date-post small { font-size: 12px;font-style: italic;}
+.boss_article-detail  .date-post small,  .boss_article-detail  .date-post span { display:inline-block; vertical-align:top}
+.boss_article-detail  .date-post span  {text-transform:uppercase; font-size:10px; font-weight:bold;color:#787878}
+.boss_article-detail  .date-post span  span {  color:#f30202}
+
+.boss_article-detail  .article-content {margin-bottom:13px;padding-bottom:18px;float:left}
+.boss_article-detail  .article-content img{ max-width:100%; }
+.boss_article-detail   p { font-size:12px; margin-bottom:22px; color:#969696}
+.boss_article-detail   p.note{background:url(../image/note_blog.png) no-repeat left top; padding-left:14px; color:#141414}
+.boss_article-detail   p.note span{background:url(../image/note_blog.png) no-repeat right bottom; padding-right:14px}
+.boss_article-detail .boss_article-action {clear:both; float:left; width:100%; margin-bottom:15px}
+.boss_article-detail .tags {float:left}
+.boss_article-detail .tags  span , .boss_article-detail .tags ul, .boss_article-detail .tags li {display:inline-block; margin-right:5px}
+.boss_article-detail .tags  span  {text-transform:none;margin-right:18px;margin-bottom:5px; color:#141414}
+.boss_article-detail .tags  a {color:#787878; text-transform:capitalize }
+.boss_article-detail .tags  a:hover { color:#000;}
+.boss_article-detail .article-share{ float:right}
+.boss_article-detail .article-share span{color:#141414; margin-right:15px}
+.boss_article-detail .article-share a img{width:16px; height:16px}
+.boss_article-detail  h3 { 
+	background:url("../image/box-heading.png") repeat-x scroll center top #FFFFFF;
+	border:1px solid #C3C1C1;
+	border-bottom: 3px solid #F44D00;
+	border-radius:3px 3px 0 0;
+    color: #F44D00;
+    font: 400 16px 'DroidSans';
+    margin-bottom: 17px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+} 
+
+
+
+.boss_article-detail  .article-related { margin-bottom:12px; clear:both;margin-bottom: 37px;}
+.boss_article-detail  .article-related h3 {}
+.boss_article-detail  .article-related li { margin-bottom:6px}
+.boss_article-detail  .article-related li .time-stamp{display:inline}
+.boss_article-detail  .article-related a { color:#787878}
+.boss_article-detail  .article-related a:hover { color:#09b1db; text-decoration:underline}
+.boss_article-detail #productRelated { margin-bottom:12px; position:relative;  overflow: hidden;}
+.boss_article-detail #productRelated  h3{}
+.boss_article-detail #productRelated  .box-product { overflow:visible; position:relative}
+.boss_article-detail #productRelated  .box-product > div { margin:0 0 15px 0; width:33%; display:inline-block; vertical-align:top}
+.boss_article-detail #productRelated  .box-product > div  > div { padding:10px; position:relative}
+.boss_article-detail #productRelated .list_carousel #prev_related{
+	background: url("../image/related_button.jpg") no-repeat scroll 0 0 transparent;
+    height: 17px;
+    right: 22px;
+    top: -7px;
+    width: 17px;
+}
+.boss_article-detail #productRelated .list_carousel #next_related{
+	background: url("../image/related_button.jpg") no-repeat scroll 100% 0 transparent;
+    height: 17px;
+    right: 0;
+    top: -7px;
+    width: 17px;
+}
+.boss_article-detail #productRelated .list_carousel #prev_related:hover{background:url("../image/related_button.jpg") no-repeat scroll 0 100% transparent;}
+.boss_article-detail #productRelated .list_carousel #next_related:hover{background:url("../image/related_button.jpg") no-repeat scroll 100% 100% transparent;}
+.boss_article-detail .box-product, .boss_article-detail .article-related ul{ clear:both;}
+
+#productRelated .price{ margin-bottom: 16px;}
+
+#article-comments {}
+.boss_article-detail .comments h3 { margin-bottom:17px}
+.form-comment-container , .form-comment-container .form-comment { clear:both; }
+.form-comment-container .form-comment textarea,.form-comment-container .form-comment input[type='text'], .form-comment-container .form-comment input[type='text']{ display:block; margin:6px 0 8px ;width:49%;}
+.form-comment-container .required { color:#323232; display:block; cursor:default; font-weight:400}
+.form-comment-container em{ color:#FF0000}
+.form-comment-container .form-comment  >  div {clear:both}
+.form-comment-container  .captcha ,.form-comment-container   a.button{  margin-bottom:10px; clear:both; }
+.form-comment-container .form-comment .captcha  input[type="text"] { margin-top:5px; float:left; margin-right:10px; margin:5px 10px 8px 0;}
+.form-comment-container  .required-1  { color: #fc1414; font-size:12px; position:relative; top:16px; cursor:default}
+
+#allcomments , .allcomments{ clear:both; margin-bottom: 20px;}
+.boss_article-detail #article-comments h3{ margin-bottom:17px}
+#allcomments > div {padding:6px 0 20px} 
+#allcomments .comment-item + .comment-item{border-top:1px solid #e8e8e8; padding-top:25px}
+.comment-item-header small.time-stamp{ display:inline-block; font-size:11px; color:#63b411; margin-left:5px}
+.comment-item-header span.comment-by { color:#969696; font-size:11px; text-transform:uppercase; margin-right:7px}
+.comment-item-header span.comment-by span { color:#1e1e1e}
+div.comment-body {color:#969696; line-height:16px}
+
+#article-comments .pagination{padding-bottom:30px}
+#productRelated ul li {}
+#productRelated .box-product { margin-left:-10px; margin-bottom:20px}
+
+.check_search input[type='text'], .check_search select { margin: 5px 0}
+.check_search h2 { clear:both; text-align:left}
